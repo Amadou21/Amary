@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/css/choix.css">
+    <script src="https://kit.fontawesome.com/befbc4c439.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <dialog id="container">
+        <div class="container">
+            <i class="fa fa-times"></i>
+            <div><h3>Veuillez choisir votre destination</h3></div>
+            <div class="content">
+                <div class="biblio">
+                    <a href="bibliotheque.html"><h2><i class="fa-solid fa-book-atlas"></i>BIBLIOTHEQUE</h2></a>
+                </div>
+                <div class="ecole">
+                    <a href="ecoles_responsive.html"><h2><i class="fa-solid fa-school-flag"></i>VOS ÉCOLES</h2></a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    
+    <menu>
+        <button onclick="myFunction()"">Mettre à jour les détails</button>
+        <button onclick="myFunction()">Mettre à jour les détails</button>
+      </menu>
+      
+      <output aria-live="polite"></output>
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("container");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    
+</html>
+
+

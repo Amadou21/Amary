@@ -1,0 +1,93 @@
+
+dialog #container2{
+    display: block;
+}
+dialog .container{
+    background-color: transparent;
+    margin: 0;
+}
+
+dialog i{
+    float: right;
+    font-size: 30px;
+}
+dialog h2{
+    font-size: 14px;
+}
+dialog h3{
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: left;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+
+dialog .content{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+
+}
+dialog .biblio{
+    text-align: center;
+    background-color: azure;
+    width: 50%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+dialog .ecole{
+    background-color: aqua;
+    width: 50%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+dialog .biblio, .ecole{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3%;
+    text-align: center;
+}
+dialog .biblio:hover,
+dialog .ecole:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+@media (max-width:2000px){
+    #container2{
+    background-color: rgba(255, 255, 255, 0.603);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 37%;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+        display: none;
+    }
+}
+
+@media (max-width:1000px){
+    dialogue h3{
+        font-size: 100%;
+    }
+    dialog .content{
+        flex-wrap: wrap;
+        display: flex;
+    
+    }
+    dialogue .biblio, .ecole{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+}

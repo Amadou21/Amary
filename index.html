@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/choix.css">
+</head>
+<body>
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#129045;</button>
+    <header>
+        <nav>
+          <ul>
+            <div id="nav_item">
+              <li class="nav_item"><a href="#contact">Contact</a></li>
+              <li class="nav_item"><a href="#niveau_academique">Niveau academique &dtrif;</a></li>
+              <li class="nav_item"><a href="#a_propos">A propos</a></li>
+              <li class="nav_item"><a href="#acceuil">Accueil</a></li>
+          </div>
+            <li id="logo"><img src="ressources/images/logo1.png" alt=""></li>
+          </ul>
+          <a class="icon_burger" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </nav>
+        <div id="acceuil">
+          <h1 class="contact"></h1>
+        </div>
+      </header>
+      
+      <section id="a_propos">
+        <div class="propos1">
+            <h2>Mission</h2>
+            <h3>Notre mission est de préparer les étudiants à être pleinement équipés de toutes les connaissances dans notre société en évolution rapide.
+
+                Nous dirigerons également la sensibilisation des étudiants à la diversité qui leur permettra de mieux comprendre nos différences, de s'unir et de se respecter.
+                
+                Nous veillerons à ce que nos étudiants développent leurs habiletés et leurs compétences intellectuelles qui sont essentielles pour le succès et le leadership à l'avenir.</h3>
+        </div>
+        <div class="propos2">
+            <h2>Vision</h2>
+            <h3>Notre vision est de développer des étudiants confiants, responsables et bien élevés qui aspirent à réaliser leur plein potentiel.
+
+                Nous y parviendrons en offrant un environnement d'apprentissage diversifié, sécurisé, amusant et favorable dans lequel tout le monde est égal et où toutes les réalisations sont célébrées.</h3>
+        </div>
+        <div class="propos3">
+            <h2>Valeurs</h2>
+            <center>
+                <div class="valeurs">
+                    <div class="valeur">Honesty</div>
+                    <div class="valeur">Innovation</div>
+                    <div class="valeur">Compassion</div>
+                    <div class="valeur">Reliability</div>
+                    <div class="valeur">Respect</div>
+                    <div class="valeur">Perseverance</div>
+                    <div class="valeur">Optimism</div>
+                    <div class="valeur">Commitment​</div>
+                </div>
+            </center>
+            </div>
+      </section>
+
+      <section id="niveau_academique">
+        <dialog id="container2">
+          <div class="container">
+              <i class="fa fa-times"></i>
+              <div><h3>Veuillez choisir votre destination</h3></div>
+              <div class="content">
+                  <div class="biblio">
+                      <a href="pages/bibliotheque.html"><h2><i class="fa-solid fa-book-atlas"></i>BIBLIOTHEQUE</h2></a>
+                  </div>
+                  <div class="ecole">
+                      <a href="pages/ecoles_responsive.html"><h2><i class="fa-solid fa-school-flag"></i>VOS ÉCOLES</h2></a>
+                  </div>
+              </div>
+          </div>
+      </dialog>
+        <a onclick="myFunction()" class="niveau1"><div><h2>PRÉSCOLAIRE</h2></div></a>
+        <a onclick="myFunction()" class="niveau2"><div><h2>ÉCOLE PRIMAIRE</h2></div></a>
+        <a onclick="myFunction()" class="niveau3"><div><h2>ÉCOLE SECONDAIRE</h2></div></a>
+        <a onclick="myFunction()" class="niveau4"><div><h2>LYCÉE</h2></div></a>
+      </section>
+      
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <div class="form">
+                <form>
+                    <div class="u-form-group-1">
+                      <input type="text" placeholder="Entrez votre nom*" name="Nom" required="">
+                    </div>
+                    <div class="u-form-group-2">
+                      <input type="email" placeholder="Entrez une adresse mail*" name="email" required="">
+                    </div>
+                    <div class="u-form-group u-form-message">
+                      <textarea placeholder="Entrez votre message*" rows="4" cols="50" name="message" required=""></textarea>
+                    </div>
+                    <div class="u-form-submit">
+                      <button><a href="#" class="button">Envoyer</a></button>
+                    </div>
+                </form>
+            </div>
+            <div id="icons">
+                <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+              </div>
+        </section>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav_item");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("container2");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+</body>
+</html>
