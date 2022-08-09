@@ -1,0 +1,328 @@
+
+body{
+    background-image: url(../../ressources/images/etablissement.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav {
+    overflow: hidden;
+    background-color: rgb(99, 50, 50);
+    height: 75px;
+    width: 100%;
+    opacity: 1;
+    margin: 0;
+}
+nav a.icon_burger {
+    display: none;
+  }
+.nav_item {
+    float: right;
+    font-size: 1.2em;
+    display: block;
+}
+.nav_item a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+ul img {
+    width: 188px;
+    float: left;
+}
+.branch .imag {
+    width: 210px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.branch{
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.849);
+    backdrop-filter: blur(px);
+    height: 900px;
+    margin: 0;
+    margin-left: 20px;
+    opacity: 1;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    font-size: 10px;
+    
+}
+.branch_parties{
+    margin: 0;
+    height: 100vh
+}
+.partie1, 
+.partie2,
+.partie3,
+.partie4,
+.partie5{
+   border-bottom: 1px black solid;
+}
+.partie1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partie1 .text, 
+.partie2 .text,
+.partie3 .text,
+.partie4 .text,
+.partie5 .text{
+   max-width: 50%;
+   margin-left: 20px;
+}
+.partie2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partie3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partie4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partie5{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text{
+    margin: 0;
+    width: 50%;
+
+}
+
+.branch::-webkit-scrollbar {
+    width: 1em;
+}
+  
+.branch::-webkit-scrollbar-track {
+    background: rgb(133, 143, 133);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+  
+.branch::-webkit-scrollbar-thumb {
+    background: rgb(33, 34, 33);
+    border: 0.25em solid rgb(122, 139, 122);
+    border-radius: 100vw;
+}
+  
+.branch::-webkit-scrollbar-thumb:hover {
+    background: rgb(37, 37, 37);
+}
+#searchbartop {
+    top:2px; right:2px;
+}
+#searchbartop #searchbartopbtn {  
+    left: -9999px;
+    display: none;
+}
+#searchbartop #searchbartopbtn + label { 
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    width: 66px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: rgb(65, 67, 192);
+    font-size: 14px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+#searchbartop #searchbartopbtn:checked + label {
+    background:#ddd; color:#aaa;
+}
+#searchbartop form { 
+    top:0; right:24px;
+    width: 100%;
+    display:none;
+}
+#searchbartop form button { 
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#searchbartop form button:hover { 
+    background-color: rgb(14, 13, 13);
+    color: white;
+    transition: ;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#searchbartop form > button, #searchbartop form > div {
+    display:table-cell;
+    height:24px;
+    margin-left: 20px;
+}
+#searchbartop #searchbartopbtn:checked ~ form {
+    display:table;
+}
+#searchbartop form > div > input {
+    width:0;
+}
+#searchbartop #searchbartopbtn:checked ~ form > div > input {
+    animation: expand 0.5s ease-in-out 1;
+      animation-fill-mode: forwards;
+}
+  @keyframes expand {
+    from { width:0; }
+    to   { 
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    width:100%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(99, 50, 50);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    z-index: 1000;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover {
+    color: rgb(17, 0, 255);
+}
+
+@media (max-width:900px) {
+    #nav_item{
+        display: none;
+        position: absolute;
+        margin-top: 55px;
+        background-color: rgba(255, 255, 255, 0.815);
+        width: 100%;
+        height: 100%;
+        color: blue;
+
+    }
+    nav{
+        height: 75px;
+    }
+    .branch{
+        width: 50%;
+        
+    }
+    .branch .imag {
+        width: 50%;
+    }
+    .branch_parties{
+        width: 100%;
+    }
+    
+    nav a {
+        color: rgb(0, 0, 0);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: list-item;
+        margin-top: 15px;
+    }
+      
+    nav a.icon_burger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 2px;
+    }
+    .icon_burger i{
+        font-size: 40px;
+        margin-right: 20px;
+    }
+ 
+    .nav a:hover {
+        background-color: rgb(104, 103, 103);
+        color: rgb(62, 48, 192);
+    }
+      
+    .active {
+        background-color: #757575;
+        color: white;
+    }
+
+}
