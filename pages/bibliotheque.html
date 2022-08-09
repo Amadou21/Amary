@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque-AMARY</title>
+    <link rel="stylesheet" href="../style/css/bibliotheque.css">
+    <script src="https://kit.fontawesome.com/befbc4c439.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header>
+                <nav>
+                  <ul>
+                    <div id="nav_item">
+                        <li class="nav_item"><a href="#contact">Contact</a></li>
+                        <li class="nav_item"><a href="#niveau_academique">Niveau academique &dtrif;</a></li>
+                        <li class="nav_item"><a href="#a_propos">A propos</a></li>
+                        <li class="nav_item"><a href="#acceuil">Accueil</a></li>
+                    </div>
+                      <li id="logo"><img src="../ressources/images/logo1.png" alt=""></li>
+                    </ul>
+                    <a class="icon_burger" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </nav>
+              </header>
+        </div>
+        <div class="hero">
+            <div class="detel">
+                <div class="titre"><h1><span>BIBLIOTHEQUE <br> EN LIGNE</span></h1></div>
+                <div id="images">
+                    <img src="../ressources/images/library.png" class="girl">
+                </div>
+                <div class="text">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic velit non maiores quas aperiam expedita qui, deserunt explicabo maxime eum beatae repellat omnis nostrum facere ipsa tempore quae inventore.
+                    </h3>
+                </div>
+                <div class="login">
+                    <a href="connexion_inscription.html">Connexion</a>
+                </div>
+            </div>
+        </div>    
+    <footer>
+        <h3>CONTACTEZ-NOUS</h3>
+        <div class="form">
+            <form>
+                <div class="u-form-group-1">
+                  <input type="text" placeholder="Entrez votre nom*" name="Nom" required="">
+                </div>
+                <div class="u-form-group-2">
+                  <input type="email" placeholder="Entrez une adresse mail*" name="email" required="">
+                </div>
+                <div class="u-form-group u-form-message">
+                  <textarea placeholder="Entrez votre message*" rows="4" cols="50" name="message" required=""></textarea>
+                </div>
+                <div class="u-form-submit">
+                  <button><a href="#" class="button">Envoyer</a></button>
+                </div>
+            </form>
+        </div>
+            <ul class="social-icons">
+              <li><a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="tw"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="in"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+    </footer>
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("nav_item");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</html>
